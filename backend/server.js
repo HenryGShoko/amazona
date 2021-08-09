@@ -8,7 +8,7 @@ app.get("/api/products", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.send("Server is Ready !");
+  res.send("<h1>Server is Ready ! Lets GO! , Are you ready ? bold</h1>");
 });
 
 const port = process.env.PORT || 5000;
