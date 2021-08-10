@@ -9,7 +9,6 @@ import {
   userRegisterReducer,
   userSigninReducer,
 } from "./reducers/userReducers";
-
 const initialState = {
   userSignin: {
     userInfo: localStorage.getItem("userInfo")
@@ -23,10 +22,7 @@ const initialState = {
     shippingAddress: localStorage.getItem("shippingAddress")
       ? JSON.parse(localStorage.getItem("shippingAddress"))
       : {},
-<<<<<<< HEAD
     paymentMethod: "PayPal",
-=======
->>>>>>> cec117428b3f22a5215058ce46c976131c43380d
   },
 };
 const reducer = combineReducers({
@@ -42,5 +38,4 @@ const store = createStore(
   initialState,
   composeEnhancer(applyMiddleware(thunk))
 );
-
 export default store;
