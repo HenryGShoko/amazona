@@ -58,7 +58,10 @@ function App() {
           <Route path="/signin" component={SigninScreen}></Route>
           <Route path="/register" component={RegisterScreen}></Route>
           <Route path="/shipping" component={ShippingAddressScreen}></Route>
+<<<<<<< HEAD
           <Route path="/payment" component={PaymentMethodScreen}></Route>
+=======
+>>>>>>> cec117428b3f22a5215058ce46c976131c43380d
           <Route path="/" component={HomeScreen} exact></Route>
         </main>
         <footer className="row center">All right reserved</footer>
